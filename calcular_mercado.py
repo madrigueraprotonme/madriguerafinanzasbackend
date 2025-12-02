@@ -26,5 +26,6 @@ def calcular_datos(tickers, periodo):
 df = calcular_datos(TICKERS, PERIODO)
 df["fecha"] = datetime.now().isoformat()
 
+
 # Guardar el resultado en el repo
 df.to_json("resultados.json", orient="records", indent=2)
